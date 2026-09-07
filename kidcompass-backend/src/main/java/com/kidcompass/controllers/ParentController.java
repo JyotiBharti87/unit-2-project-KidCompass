@@ -16,6 +16,7 @@ public class ParentController {
         this.parentRepository = parentRepository;
     }
 
+    // Endpoint to get all parents from the database
     @GetMapping
     public List<Parent> getAllParents() {
         return parentRepository.findAll();
@@ -24,6 +25,17 @@ public class ParentController {
     @PostMapping
     public Parent createParent(@RequestBody Parent parent){
         return parentRepository.save(parent);
+    }
+
+    // Return a parent profile by ID
+    @GetMapping("/{id}")
+    public Parent getParentById(@PathVariable Long id) {
+        return parentRepository.findById(id).orElse(null);}
+
+    //Delete a parent profile by ID
+    @DeleteMapping("/{id}")
+    public void deleteParentById(@PathVariable Long id) {
+        parentRepository.deleteById(id);
     }
 
 }
