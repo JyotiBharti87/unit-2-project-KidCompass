@@ -1,4 +1,4 @@
-package com.kidcompass.model;
+package com.kidcompass.models;
 
 
 import jakarta.persistence.Entity;
@@ -7,9 +7,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 
-/**
- * Parent entity class representing a parent and their child. This will store info about the parent and their child in the database.
- */
+//Parent entity class representing a parent and their child. This will store info about the parent and their child in the database.
+
 @Entity
 public class Parent {
 
