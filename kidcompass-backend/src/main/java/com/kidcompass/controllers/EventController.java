@@ -22,7 +22,7 @@ public class EventController {
 
     //Returns a list of all events in the database.
     @GetMapping
-    public List<Event>getAllEvents() {
+    public List<Event> getAllEvents() {
         return eventRepository.findAll();
     }
 
@@ -42,5 +42,25 @@ public class EventController {
         event.setParent(parent);
         return eventRepository.save(event);
     }
+
+    //update an existing event by id.
+    @PutMapping("/{id}")
+    public Event updateEvent(@PathVariable Long id, @RequestBody Event updatedEvent) {
+    Event event = eventRepository.findById(id).orElse(null);
+    if (event == null) {
+        return null;
+    }
+    event.setTitle(updatedEvent.getTitle());
+    event.setDescription(updatedEvent.getDescription());
+    event.setLocation(updatedEvent.getLocation());
+    event.setEventDateTime(updatedEvent.getEventDateTime());
+
+    return eventRepository.save(event);
+}
+
+//Delete an event by id.
+@DeleteMapping("/{id}")
+public void deleteEvent(@PathVariable Long id) {
+    eventRepository.deleteById(id); }
 
 }
