@@ -1,0 +1,982 @@
+[
+    {
+        "id": 1,
+        "name": "Liam Carter",
+        "age": 12,
+        "gender": "boy",
+        "zipCode": "63011",
+        "city": "Ballwin",
+        "hobbies": [
+            "soccer",
+            "video games",
+            "bike riding"
+        ],
+        "about": "I love playing soccer with my friends and riding my bike in the park."
+    },
+    {
+        "id": 2,
+        "name": "Ava Johnson",
+        "age": 10,
+        "gender": "girl",
+        "zipCode": "63017",
+        "city": "Chesterfield",
+        "hobbies": [
+            "dance",
+            "drawing",
+            "reading"
+        ],
+        "about": "I enjoy dancing and drawing pictures in my free time."
+    },
+    {
+        "id": 3,
+        "name": "Noah Williams",
+        "age": 8,
+        "gender": "boy",
+        "zipCode": "63025",
+        "city": "Eureka",
+        "hobbies": [
+            "lego",
+            "swimming",
+            "puzzles"
+        ],
+        "about": "I like building LEGO sets and swimming during summer."
+    },
+    {
+        "id": 4,
+        "name": "Sophia Brown",
+        "age": 6,
+        "gender": "girl",
+        "zipCode": "63031",
+        "city": "Florissant",
+        "hobbies": [
+            "coloring",
+            "dolls",
+            "singing"
+        ],
+        "about": "I love singing songs and playing with my dolls."
+    },
+    {
+        "id": 5,
+        "name": "James Davis",
+        "age": 14,
+        "gender": "boy",
+        "zipCode": "63042",
+        "city": "Bridgeton",
+        "hobbies": [
+            "basketball",
+            "gaming",
+            "music"
+        ],
+        "about": "I play basketball and enjoy listening to music."
+    },
+    {
+        "id": 6,
+        "name": "Isabella Garcia",
+        "age": 9,
+        "gender": "girl",
+        "zipCode": "63105",
+        "city": "Clayton",
+        "hobbies": [
+            "art",
+            "reading",
+            "piano"
+        ],
+        "about": "I enjoy painting and playing piano."
+    },
+    {
+        "id": 7,
+        "name": "Benjamin Martinez",
+        "age": 11,
+        "gender": "boy",
+        "zipCode": "63114",
+        "city": "Overland",
+        "hobbies": [
+            "football",
+            "lego",
+            "skateboarding"
+        ],
+        "about": "I like football and skateboarding with my friends."
+    },
+    {
+        "id": 8,
+        "name": "Mia Hernandez",
+        "age": 5,
+        "gender": "girl",
+        "zipCode": "63119",
+        "city": "Webster Groves",
+        "hobbies": [
+            "drawing",
+            "dancing",
+            "playing house"
+        ],
+        "about": "I love dancing and drawing colorful pictures."
+    },
+    {
+        "id": 9,
+        "name": "Lucas Moore",
+        "age": 13,
+        "gender": "boy",
+        "zipCode": "63123",
+        "city": "Affton",
+        "hobbies": [
+            "baseball",
+            "gaming",
+            "running"
+        ],
+        "about": "I play baseball and enjoy outdoor sports."
+    },
+    {
+        "id": 10,
+        "name": "Charlotte Taylor",
+        "age": 7,
+        "gender": "girl",
+        "zipCode": "63130",
+        "city": "University City",
+        "hobbies": [
+            "reading",
+            "crafts",
+            "baking"
+        ],
+        "about": "I love reading stories and helping in baking."
+    },
+    {
+        "id": 11,
+        "name": "Henry Anderson",
+        "age": 4,
+        "gender": "boy",
+        "zipCode": "63021",
+        "city": "Manchester",
+        "hobbies": [
+            "cars",
+            "blocks",
+            "cartoons"
+        ],
+        "about": "I enjoy playing with toy cars and watching cartoons."
+    },
+    {
+        "id": 12,
+        "name": "Amelia Thomas",
+        "age": 3,
+        "gender": "girl",
+        "zipCode": "63005",
+        "city": "Chesterfield",
+        "hobbies": [
+            "dolls",
+            "coloring",
+            "music"
+        ],
+        "about": "I like music and coloring fun pictures."
+    },
+    {
+        "id": 13,
+        "name": "Alexander Jackson",
+        "age": 14,
+        "gender": "boy",
+        "zipCode": "63026",
+        "city": "Fenton",
+        "hobbies": [
+            "football",
+            "gym",
+            "gaming"
+        ],
+        "about": "I enjoy football and staying active."
+    },
+    {
+        "id": 14,
+        "name": "Harper White",
+        "age": 8,
+        "gender": "girl",
+        "zipCode": "63032",
+        "city": "Florissant",
+        "hobbies": [
+            "dance",
+            "art",
+            "friends"
+        ],
+        "about": "I love dancing and making new friends."
+    },
+    {
+        "id": 15,
+        "name": "Daniel Harris",
+        "age": 10,
+        "gender": "boy",
+        "zipCode": "63043",
+        "city": "Maryland Heights",
+        "hobbies": [
+            "soccer",
+            "lego",
+            "coding games"
+        ],
+        "about": "I enjoy soccer and trying simple coding games."
+    },
+    {
+        "id": 16,
+        "name": "Evelyn Martin",
+        "age": 6,
+        "gender": "girl",
+        "zipCode": "63121",
+        "city": "Jennings",
+        "hobbies": [
+            "drawing",
+            "singing",
+            "playing"
+        ],
+        "about": "I love to sing and draw fun pictures."
+    },
+    {
+        "id": 17,
+        "name": "Matthew Thompson",
+        "age": 9,
+        "gender": "boy",
+        "zipCode": "63122",
+        "city": "Kirkwood",
+        "hobbies": [
+            "basketball",
+            "bike riding",
+            "games"
+        ],
+        "about": "I enjoy riding my bike and playing basketball."
+    },
+    {
+        "id": 18,
+        "name": "Abigail Garcia",
+        "age": 11,
+        "gender": "girl",
+        "zipCode": "63125",
+        "city": "Lemay",
+        "hobbies": [
+            "reading",
+            "dance",
+            "art"
+        ],
+        "about": "I love reading books and dancing."
+    },
+    {
+        "id": 19,
+        "name": "David Robinson",
+        "age": 13,
+        "gender": "boy",
+        "zipCode": "63132",
+        "city": "Olivette",
+        "hobbies": [
+            "gaming",
+            "basketball",
+            "music"
+        ],
+        "about": "I enjoy gaming and playing basketball."
+    },
+    {
+        "id": 20,
+        "name": "Ella Clark",
+        "age": 7,
+        "gender": "girl",
+        "zipCode": "63141",
+        "city": "Creve Coeur",
+        "hobbies": [
+            "crafts",
+            "reading",
+            "drawing"
+        ],
+        "about": "I love doing crafts and reading stories."
+    },
+    {
+        "id": 21,
+        "name": "Logan Lewis",
+        "age": 12,
+        "gender": "boy",
+        "zipCode": "63146",
+        "city": "Maryland Heights",
+        "hobbies": [
+            "soccer",
+            "running",
+            "games"
+        ],
+        "about": "I like sports and outdoor games."
+    },
+    {
+        "id": 22,
+        "name": "Grace Walker",
+        "age": 5,
+        "gender": "girl",
+        "zipCode": "63126",
+        "city": "Sunset Hills",
+        "hobbies": [
+            "dolls",
+            "drawing",
+            "music"
+        ],
+        "about": "I love music and drawing pictures."
+    },
+    {
+        "id": 23,
+        "name": "Jack Hall",
+        "age": 2,
+        "gender": "boy",
+        "zipCode": "63129",
+        "city": "Oakville",
+        "hobbies": [
+            "blocks",
+            "cars",
+            "cartoons"
+        ],
+        "about": "I enjoy playing with blocks and toy cars."
+    },
+    {
+        "id": 24,
+        "name": "Chloe Allen",
+        "age": 4,
+        "gender": "girl",
+        "zipCode": "63133",
+        "city": "Ferguson",
+        "hobbies": [
+            "coloring",
+            "dancing",
+            "toys"
+        ],
+        "about": "I like dancing and coloring."
+    },
+    {
+        "id": 25,
+        "name": "Sebastian Young",
+        "age": 13,
+        "gender": "boy",
+        "zipCode": "63134",
+        "city": "Ferguson",
+        "hobbies": [
+            "football",
+            "gaming",
+            "friends"
+        ],
+        "about": "I enjoy football and hanging out with friends."
+    },
+    {
+        "id": 26,
+        "name": "Lily King",
+        "age": 9,
+        "gender": "girl",
+        "zipCode": "63135",
+        "city": "Ferguson",
+        "hobbies": [
+            "reading",
+            "art",
+            "dance"
+        ],
+        "about": "I love reading and dancing."
+    },
+    {
+        "id": 27,
+        "name": "Owen Wright",
+        "age": 11,
+        "gender": "boy",
+        "zipCode": "63136",
+        "city": "Jennings",
+        "hobbies": [
+            "basketball",
+            "bike",
+            "games"
+        ],
+        "about": "I enjoy basketball and riding my bike."
+    },
+    {
+        "id": 28,
+        "name": "Zoe Scott",
+        "age": 6,
+        "gender": "girl",
+        "zipCode": "63137",
+        "city": "Jennings",
+        "hobbies": [
+            "drawing",
+            "music",
+            "friends"
+        ],
+        "about": "I love drawing and music."
+    },
+    {
+        "id": 29,
+        "name": "Wyatt Green",
+        "age": 14,
+        "gender": "boy",
+        "zipCode": "63138",
+        "city": "Jennings",
+        "hobbies": [
+            "sports",
+            "gaming",
+            "music"
+        ],
+        "about": "I enjoy sports and gaming."
+    },
+    {
+        "id": 30,
+        "name": "Hannah Adams",
+        "age": 8,
+        "gender": "girl",
+        "zipCode": "63122",
+        "city": "Kirkwood",
+        "hobbies": [
+            "dance",
+            "reading",
+            "friends"
+        ],
+        "about": "I like dancing and reading."
+    },
+    {
+        "id": 31,
+        "name": "Caleb Baker",
+        "age": 12,
+        "gender": "boy",
+        "zipCode": "63011",
+        "city": "Ballwin",
+        "hobbies": [
+            "soccer",
+            "lego",
+            "coding"
+        ],
+        "about": "I enjoy building things and playing soccer."
+    },
+    {
+        "id": 32,
+        "name": "Natalie Gonzalez",
+        "age": 10,
+        "gender": "girl",
+        "zipCode": "63017",
+        "city": "Chesterfield",
+        "hobbies": [
+            "art",
+            "reading",
+            "music"
+        ],
+        "about": "I love art and music."
+    },
+    {
+        "id": 33,
+        "name": "Isaac Nelson",
+        "age": 7,
+        "gender": "boy",
+        "zipCode": "63025",
+        "city": "Eureka",
+        "hobbies": [
+            "bike",
+            "lego",
+            "games"
+        ],
+        "about": "I enjoy riding my bike and playing games."
+    },
+    {
+        "id": 34,
+        "name": "Samantha Carter",
+        "age": 13,
+        "gender": "girl",
+        "zipCode": "63031",
+        "city": "Florissant",
+        "hobbies": [
+            "dance",
+            "music",
+            "friends"
+        ],
+        "about": "I love dancing and hanging out."
+    },
+    {
+        "id": 35,
+        "name": "Anthony Mitchell",
+        "age": 14,
+        "gender": "boy",
+        "zipCode": "63042",
+        "city": "Bridgeton",
+        "hobbies": [
+            "basketball",
+            "fitness",
+            "music"
+        ],
+        "about": "I enjoy basketball and staying fit."
+    },
+    {
+        "id": 36,
+        "name": "Layla Perez",
+        "age": 5,
+        "gender": "girl",
+        "zipCode": "63105",
+        "city": "Clayton",
+        "hobbies": [
+            "drawing",
+            "toys",
+            "music"
+        ],
+        "about": "I love drawing and music."
+    },
+    {
+        "id": 37,
+        "name": "Christopher Roberts",
+        "age": 9,
+        "gender": "boy",
+        "zipCode": "63114",
+        "city": "Overland",
+        "hobbies": [
+            "football",
+            "games",
+            "friends"
+        ],
+        "about": "I like playing football and games."
+    },
+    {
+        "id": 38,
+        "name": "Aria Turner",
+        "age": 6,
+        "gender": "girl",
+        "zipCode": "63119",
+        "city": "Webster Groves",
+        "hobbies": [
+            "dance",
+            "drawing",
+            "friends"
+        ],
+        "about": "I love dancing and drawing."
+    },
+    {
+        "id": 39,
+        "name": "Andrew Phillips",
+        "age": 11,
+        "gender": "boy",
+        "zipCode": "63123",
+        "city": "Affton",
+        "hobbies": [
+            "soccer",
+            "gaming",
+            "lego"
+        ],
+        "about": "I enjoy soccer and building LEGO."
+    },
+    {
+        "id": 40,
+        "name": "Penelope Campbell",
+        "age": 7,
+        "gender": "girl",
+        "zipCode": "63130",
+        "city": "University City",
+        "hobbies": [
+            "reading",
+            "crafts",
+            "music"
+        ],
+        "about": "I love reading and crafts."
+    },
+    {
+        "id": 41,
+        "name": "Ryan Parker",
+        "age": 12,
+        "gender": "boy",
+        "zipCode": "63141",
+        "city": "Creve Coeur",
+        "hobbies": [
+            "basketball",
+            "games",
+            "running"
+        ],
+        "about": "I like basketball and running."
+    },
+    {
+        "id": 42,
+        "name": "Scarlett Evans",
+        "age": 8,
+        "gender": "girl",
+        "zipCode": "63146",
+        "city": "Maryland Heights",
+        "hobbies": [
+            "dance",
+            "art",
+            "friends"
+        ],
+        "about": "I enjoy dancing and art."
+    },
+    {
+        "id": 43,
+        "name": "Nathan Edwards",
+        "age": 10,
+        "gender": "boy",
+        "zipCode": "63126",
+        "city": "Sunset Hills",
+        "hobbies": [
+            "soccer",
+            "bike",
+            "games"
+        ],
+        "about": "I love soccer and riding my bike."
+    },
+    {
+        "id": 44,
+        "name": "Victoria Collins",
+        "age": 9,
+        "gender": "girl",
+        "zipCode": "63129",
+        "city": "Oakville",
+        "hobbies": [
+            "reading",
+            "dance",
+            "music"
+        ],
+        "about": "I love reading and dancing."
+    },
+    {
+        "id": 45,
+        "name": "Aaron Stewart",
+        "age": 13,
+        "gender": "boy",
+        "zipCode": "63133",
+        "city": "Ferguson",
+        "hobbies": [
+            "football",
+            "gaming",
+            "friends"
+        ],
+        "about": "I enjoy football and gaming."
+    },
+    {
+        "id": 46,
+        "name": "Madison Sanchez",
+        "age": 11,
+        "gender": "girl",
+        "zipCode": "63134",
+        "city": "Ferguson",
+        "hobbies": [
+            "dance",
+            "art",
+            "reading"
+        ],
+        "about": "I love art and dancing."
+    },
+    {
+        "id": 47,
+        "name": "Dylan Morris",
+        "age": 6,
+        "gender": "boy",
+        "zipCode": "63135",
+        "city": "Ferguson",
+        "hobbies": [
+            "lego",
+            "cars",
+            "games"
+        ],
+        "about": "I enjoy LEGO and toy cars."
+    },
+    {
+        "id": 48,
+        "name": "Lucy Rogers",
+        "age": 4,
+        "gender": "girl",
+        "zipCode": "63136",
+        "city": "Jennings",
+        "hobbies": [
+            "toys",
+            "drawing",
+            "music"
+        ],
+        "about": "I like drawing and music."
+    },
+    {
+        "id": 49,
+        "name": "Ethan Reed",
+        "age": 14,
+        "gender": "boy",
+        "zipCode": "63137",
+        "city": "Jennings",
+        "hobbies": [
+            "sports",
+            "music",
+            "friends"
+        ],
+        "about": "I enjoy sports and hanging out."
+    },
+    {
+        "id": 50,
+        "name": "Aurora Cook",
+        "age": 3,
+        "gender": "girl",
+        "zipCode": "63138",
+        "city": "Jennings",
+        "hobbies": [
+            "toys",
+            "music",
+            "coloring"
+        ],
+        "about": "I love playing and listening to music."
+    },
+    {
+        "id": 51,
+        "name": "Liam Carter",
+        "age": 12,
+        "gender": "boy",
+        "zipCode": "63011",
+        "city": "Ballwin",
+        "hobbies": [
+            "soccer",
+            "video games",
+            "bike riding"
+        ],
+        "about": "I love playing soccer with my friends and riding my bike in the park."
+    },
+    {
+        "id": 52,
+        "name": "Ava Johnson",
+        "age": 10,
+        "gender": "girl",
+        "zipCode": "63017",
+        "city": "Chesterfield",
+        "hobbies": [
+            "dance",
+            "drawing",
+            "reading"
+        ],
+        "about": "I enjoy dancing and drawing pictures in my free time."
+    },
+    {
+        "id": 53,
+        "name": "Arjun Patel",
+        "age": 11,
+        "gender": "boy",
+        "zipCode": "63005",
+        "city": "Chesterfield",
+        "hobbies": [
+            "cricket",
+            "math games",
+            "coding"
+        ],
+        "about": "I like playing cricket and solving math puzzles."
+    },
+    {
+        "id": 54,
+        "name": "Mei Chen",
+        "age": 9,
+        "gender": "girl",
+        "zipCode": "63141",
+        "city": "Creve Coeur",
+        "hobbies": [
+            "piano",
+            "drawing",
+            "reading"
+        ],
+        "about": "I enjoy playing piano and reading storybooks."
+    },
+    {
+        "id": 55,
+        "name": "Diego Martinez",
+        "age": 13,
+        "gender": "boy",
+        "zipCode": "63123",
+        "city": "Affton",
+        "hobbies": [
+            "soccer",
+            "video games",
+            "friends"
+        ],
+        "about": "I love soccer and playing games with my friends."
+    },
+    {
+        "id": 56,
+        "name": "Sara Rahimi",
+        "age": 12,
+        "gender": "girl",
+        "zipCode": "63146",
+        "city": "Maryland Heights",
+        "hobbies": [
+            "art",
+            "reading",
+            "dance"
+        ],
+        "about": "I enjoy painting and reading books."
+    },
+    {
+        "id": 57,
+        "name": "Noah Kim",
+        "age": 8,
+        "gender": "boy",
+        "zipCode": "63130",
+        "city": "University City",
+        "hobbies": [
+            "lego",
+            "taekwondo",
+            "games"
+        ],
+        "about": "I like building LEGO and learning taekwondo."
+    },
+    {
+        "id": 58,
+        "name": "Ananya Sharma",
+        "age": 7,
+        "gender": "girl",
+        "zipCode": "63011",
+        "city": "Ballwin",
+        "hobbies": [
+            "dance",
+            "drawing",
+            "music"
+        ],
+        "about": "I love dancing and drawing colorful pictures."
+    },
+    {
+        "id": 59,
+        "name": "Ethan Nguyen",
+        "age": 10,
+        "gender": "boy",
+        "zipCode": "63119",
+        "city": "Webster Groves",
+        "hobbies": [
+            "gaming",
+            "soccer",
+            "coding"
+        ],
+        "about": "I enjoy video games and learning simple coding."
+    },
+    {
+        "id": 60,
+        "name": "Sofia Lopez",
+        "age": 6,
+        "gender": "girl",
+        "zipCode": "63125",
+        "city": "Lemay",
+        "hobbies": [
+            "drawing",
+            "dolls",
+            "music"
+        ],
+        "about": "I love drawing and playing with dolls."
+    },
+    {
+        "id": 61,
+        "name": "Reza Farhadi",
+        "age": 14,
+        "gender": "boy",
+        "zipCode": "63132",
+        "city": "Olivette",
+        "hobbies": [
+            "soccer",
+            "fitness",
+            "music"
+        ],
+        "about": "I enjoy playing soccer and listening to music."
+    },
+    {
+        "id": 62,
+        "name": "Aaliyah Brown",
+        "age": 5,
+        "gender": "girl",
+        "zipCode": "63031",
+        "city": "Florissant",
+        "hobbies": [
+            "singing",
+            "dancing",
+            "toys"
+        ],
+        "about": "I love singing songs and dancing."
+    },
+    {
+        "id": 63,
+        "name": "Kabir Singh",
+        "age": 13,
+        "gender": "boy",
+        "zipCode": "63026",
+        "city": "Fenton",
+        "hobbies": [
+            "cricket",
+            "gaming",
+            "friends"
+        ],
+        "about": "I like cricket and hanging out with friends."
+    },
+    {
+        "id": 64,
+        "name": "Emily Davis",
+        "age": 9,
+        "gender": "girl",
+        "zipCode": "63105",
+        "city": "Clayton",
+        "hobbies": [
+            "reading",
+            "art",
+            "baking"
+        ],
+        "about": "I enjoy reading books and baking cookies."
+    },
+    {
+        "id": 65,
+        "name": "Carlos Hernandez",
+        "age": 11,
+        "gender": "boy",
+        "zipCode": "63021",
+        "city": "Manchester",
+        "hobbies": [
+            "soccer",
+            "bike",
+            "games"
+        ],
+        "about": "I love playing soccer and riding my bike."
+    },
+    {
+        "id": 66,
+        "name": "Zara Khan",
+        "age": 8,
+        "gender": "girl",
+        "zipCode": "63114",
+        "city": "Overland",
+        "hobbies": [
+            "drawing",
+            "reading",
+            "music"
+        ],
+        "about": "I like drawing and listening to music."
+    },
+    {
+        "id": 67,
+        "name": "Omar Rahimi",
+        "age": 6,
+        "gender": "boy",
+        "zipCode": "63133",
+        "city": "Ferguson",
+        "hobbies": [
+            "toys",
+            "cars",
+            "cartoons"
+        ],
+        "about": "I enjoy playing with cars and watching cartoons."
+    },
+    {
+        "id": 68,
+        "name": "Maya Patel",
+        "age": 4,
+        "gender": "girl",
+        "zipCode": "63129",
+        "city": "Oakville",
+        "hobbies": [
+            "toys",
+            "coloring",
+            "music"
+        ],
+        "about": "I love coloring and playing with toys."
+    },
+    {
+        "id": 69,
+        "name": "Jayden Walker",
+        "age": 12,
+        "gender": "boy",
+        "zipCode": "63136",
+        "city": "Jennings",
+        "hobbies": [
+            "basketball",
+            "games",
+            "friends"
+        ],
+        "about": "I enjoy basketball and video games."
+    },
+    {
+        "id": 70,
+        "name": "Chloe Wilson",
+        "age": 7,
+        "gender": "girl",
+        "zipCode": "63122",
+        "city": "Kirkwood",
+        "hobbies": [
+            "dance",
+            "reading",
+            "crafts"
+        ],
+        "about": "I love dancing and doing crafts."
+    }
+]
