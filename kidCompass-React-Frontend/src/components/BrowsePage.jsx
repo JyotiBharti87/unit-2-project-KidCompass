@@ -11,10 +11,19 @@ function BrowsePage({ userName }) {
 
     //state to store the list of kids
     const [kids,setKids] = useState([]);
+
   //State for search input
   const [locationTerm, setLocationTerm] = useState("");
+
   //State to store selected age filter
   const [selectedAge, setSelectedAge] = useState("All");
+
+  //Get data from springBootApi
+    useEffect(() => {
+        fetch("http://localhost:8080/kids")
+            .then((response) => response.json())
+            .then((data) => setKids(data));
+    }, []);
 
   //filter kids by Location and age
   const filteredKids = kidsData.filter((kid) => {
