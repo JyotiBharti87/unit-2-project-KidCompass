@@ -25,7 +25,7 @@ function BrowsePage({ userName }) {
     }, []);
 
   //filter kids by Location and age
-  const filteredKids = kidsData.filter((kid) => {
+  const filteredKids = kids.filter((kid) => {
     const matchesLocation =
       kid.city.toLowerCase().includes(locationTerm.toLowerCase()) ||
       kid.zipCode.includes(locationTerm);
