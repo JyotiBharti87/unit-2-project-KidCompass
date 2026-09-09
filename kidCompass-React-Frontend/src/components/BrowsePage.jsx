@@ -1,7 +1,6 @@
 // Main page that handles search, filtering, and displaying kid profiles
 
 import { useEffect, useState } from "react";
-import kidsData from "../KidsData.json";
 import LocationSearch from "./LocationSearch";
 import FilterBar from "./FilterBar";
 import KidList from "./KidList";
@@ -59,7 +58,9 @@ function BrowsePage({ userName }) {
           setLocationTerm={setLocationTerm}
         />
 
-        <FilterBar selectedAge={selectedAge} setSelectedAge={setSelectedAge} />
+        <FilterBar
+            selectedAge={selectedAge}
+                   setSelectedAge={setSelectedAge} />
       </div>
 
       <KidList kids={filteredKids} />
