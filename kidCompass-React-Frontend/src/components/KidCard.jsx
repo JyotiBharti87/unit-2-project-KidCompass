@@ -1,3 +1,5 @@
+
+
 // Displays a summary card for each kid profile
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
@@ -7,14 +9,18 @@ function KidCard({ kid }) {
 
   return (
     <div className="card">
-      <span className="kid-badge">{kid.age} years old</span>
 
+        {/*This will display kid Age from the backend*/}
+      <span className="kid-badge">{kid.kidAge} years old</span>
+
+        {/*External APi to create an Avatar for Kid*/}
       <img
-        src={`https://api.dicebear.com/7.x/adventurer/svg?seed=${kid.name}`}
-        alt={kid.name}
+        src={`https://api.dicebear.com/7.x/adventurer/svg?seed=${kid.kidName}`}
+        alt={kid.kidName}
       />
 
-      <h3>{kid.name}</h3>
+        {/*Show Kid Info*/}
+      <h3>{kid.kidName}</h3>
       <p>City: {kid.city}</p>
       <p>Zip Code: {kid.zipCode}</p>
 
