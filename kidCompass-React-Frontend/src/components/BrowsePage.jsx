@@ -19,7 +19,7 @@ function BrowsePage({ userName }) {
 
   //Get data from springBootApi
     useEffect(() => {
-        fetch("http://localhost:8080/kids")
+        fetch("http://localhost:8080/api/parents")
             .then((response) => response.json())
             .then((data) => setKids(data));
     }, []);
