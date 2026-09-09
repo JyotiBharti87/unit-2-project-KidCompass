@@ -1,6 +1,6 @@
 // Main page that handles search, filtering, and displaying kid profiles
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import kidsData from "../KidsData.json";
 import LocationSearch from "./LocationSearch";
 import FilterBar from "./FilterBar";
@@ -8,6 +8,9 @@ import KidList from "./KidList";
 import "../App.css";
 
 function BrowsePage({ userName }) {
+
+    //state to store the list of kids
+    const [kids,setKids] = useState([]);
   //State for search input
   const [locationTerm, setLocationTerm] = useState("");
   //State to store selected age filter
