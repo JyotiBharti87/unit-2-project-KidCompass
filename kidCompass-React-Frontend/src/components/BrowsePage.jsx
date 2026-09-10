@@ -28,16 +28,16 @@ function BrowsePage({ userName }) {
   const filteredKids = kids.filter((kid) => {
     const matchesLocation =
       kid.city.toLowerCase().includes(locationTerm.toLowerCase()) ||
-      kid.zipCode.includes(locationTerm);
+      kid.zipCode.toString().includes(locationTerm);
 
     let matchesAge = true;
 
     if (selectedAge === "2-5") {
-      matchesAge = kid.age >= 2 && kid.age <= 5;
+      matchesAge = kid.kidAge >= 2 && kid.kidAge <= 5;
     } else if (selectedAge === "6-9") {
-      matchesAge = kid.age >= 6 && kid.age <= 9;
+      matchesAge = kid.kidAge >= 6 && kid.kidAge <= 9;
     } else if (selectedAge === "10-14") {
-      matchesAge = kid.age >= 10 && kid.age <= 14;
+      matchesAge = kid.kidAge >= 10 && kid.kidAge <= 14;
     }
 
     return matchesLocation && matchesAge;
