@@ -21,7 +21,10 @@ function BrowsePage({ userName }) {
     useEffect(() => {
         fetch("http://localhost:8080/api/parents")
             .then((response) => response.json())
-            .then((data) => setKids(data));
+            .then((data) => {
+                console.log("Parents from backend:", data);
+                setKids(data);
+            });
     }, []);
 
   //filter kids by Location and age
