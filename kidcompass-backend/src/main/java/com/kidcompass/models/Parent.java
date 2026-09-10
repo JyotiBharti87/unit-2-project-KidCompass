@@ -22,6 +22,7 @@ public class Parent {
     private String email;
     private String city;
     private String state;
+    private String zipCode;
     private String country;
     private String kidName;
     private Integer kidAge;
@@ -31,11 +32,12 @@ public class Parent {
     public Parent() {}
 
     //Constructor
-    public Parent(String name, String email, String city, String state, String country, String kidName, Integer kidAge, String kidGender, String kidBio) {
+    public Parent(String name, String email, String city, String state, String zipCode, String country, String kidName, Integer kidAge, String kidGender, String kidBio) {
         this.name = name;
         this.email = email;
         this.city = city;
         this.state = state;
+        this.zipCode = zipCode;
         this.country = country;
         this.kidName = kidName;
         this.kidAge = kidAge;
@@ -83,6 +85,13 @@ public class Parent {
 
     public void setState(String state) {
         this.state = state;
+    }
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
     }
 
     public String getCountry() {

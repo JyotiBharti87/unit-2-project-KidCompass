@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Music & Dance Fun",
+    "date": "2026-05-10",
+    "address": "112 Grove Park, Ballwin, MO 63011",
+    "description": "Kids can enjoy music, dancing, and fun movement activities."
+  },
+  {
+    "title": "Nature Walk Adventure",
+    "date": "2026-05-12",
+    "address": "450 Forest Trail, Chesterfield, MO 63017",
+    "description": "Explore nature trails and learn about plants and animals."
+  },
+  {
+    "title": "LEGO Building Challenge",
+    "date": "2026-05-15",
+    "address": "221 Main Street, O'Fallon, MO 63366",
+    "description": "Creative LEGO building competition with small prizes."
+  },
+  {
+    "title": "Story & Puppet Show",
+    "date": "2026-05-18",
+    "address": "100 Library Lane, St. Charles, MO 63301",
+    "description": "Interactive storytelling with fun puppet characters."
+  },
+  {
+    "title": "Kids Cooking Class",
+    "date": "2026-05-20",
+    "address": "89 Market Street, St. Louis, MO 63101",
+    "description": "Learn simple and healthy recipes in a fun way."
+  },
+  {
+    "title": "Outdoor Movie Night",
+    "date": "2026-05-22",
+    "address": "300 Lakeview Park, Wentzville, MO 63385",
+    "description": "Family-friendly movie under the stars with popcorn."
+  },
+  {
+    "title": "Mini Science Fair",
+    "date": "2026-05-25",
+    "address": "55 Innovation Drive, St. Louis, MO 63110",
+    "description": "Kids present small science experiments and projects."
+  },
+  {
+    "title": "Bike Ride Meetup",
+    "date": "2026-05-28",
+    "address": "700 Lakeside Blvd, Lake St. Louis, MO 63367",
+    "description": "Safe group bike ride for kids and parents."
+  }
+]
