@@ -8,7 +8,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/parents")
-@CrossOrigin(origins = "http://localhost:5174") // Allow requests from the React frontend
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "http://localhost:5174"
+}) // Allow requests from the React frontend
 
 public class ParentController {
 
