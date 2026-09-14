@@ -148,12 +148,49 @@ function Events() {
     setMessage("");
   };
 
+  // Delete an event from the database
+  const handleDelete = (index) => {
+    const eventId = events[index].id;
 
+    fetch(`http://localhost:8080/api/events/${eventId}`, {
+      method: "DELETE",
+    })
+        .then(() => {
+          const filteredEvents = events.filter(
+              (event) => event.id !== eventId
+          );
+
+          setEvents(filteredEvents);
+          setMessage("Event deleted successfully.");
+
+          // Clear form if the event being edited was deleted
+          if (editIndex === index) {
+            setEditIndex(null);
+            clearForm();
+          }
+        })
+        .catch(() => {
+          setMessage("Unable to delete event.");
+        });
+  };
+
+  // Clear the event form
+  const clearForm = () => {
+    setFormData({
+      title: "",
+      eventDateTime: "",
+      location: "",
+      description: "",
+    });
+
+    setParentId("");
+  };
 
 
   return (
     <main className="app">
       <Button text="⬅ Back" className="back-btn" onClick={() => navigate(-1)} />
+
       <div className="detail-box">
         <h1>Events</h1>
         <form onSubmit={handleSubmit} className="event-form">
