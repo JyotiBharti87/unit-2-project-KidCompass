@@ -29,48 +29,61 @@ function Events() {
     }));
   };
 
-  //Update event
+  //Add a new Event or Update an existing event
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!formData.title || !formData.date || !formData.address) {
+    // Make sure required fields are filled out
+    if (!formData.title || !formData.eventDateTime || !formData.location) {
       return;
     }
 
+    // Update an existing event
     if (editIndex !== null) {
-      const updatedEvents = [...events];
-      updatedEvents[editIndex] = formData;
-      setEvents(updatedEvents);
-      setEditIndex(null);
+      const eventId = events[editIndex].id;
+
+      fetch(`http://localhost:8080/api/events/${eventId}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+          .then((response) => response.json())
+          .then((updatedEvent) => {
+            const updatedEvents = [...events];
+            updatedEvents[editIndex] = updatedEvent;
+
+            setEvents(updatedEvents);
+            setEditIndex(null);
+          });
+
     } else {
-      setEvents([...events, formData]);
+
+      //Create a new event
+      fetch(`http://localhost:8080/api/events/parent/${parentId}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+          .then((response) => response.json())
+          .then((newEvent) => {
+            setEvents([...events, newEvent]);
+          });
     }
+
+
+  //delete events
+
     setFormData({
       title: "",
-      date: "",
+      eventDateTime: "",
       location: "",
       description: "",
     });
-  };
-  //edit event
-  const handleEdit = (index) => {
-    setFormData(events[index]);
-    setEditIndex(index);
-  };
-  //delete events
-  const handleDelete = (index) => {
-    const filteredEvents = events.filter((_, i) => i !== index);
-    setEvents(filteredEvents);
-    if (editIndex === index) {
-      setEditIndex(null);
-      setFormData({
-        title: "",
-        date: "",
-        address: "",
-        description: ",",
-      });
-    }
   };
 
   // Save to localStorage whenever events change
@@ -125,10 +138,10 @@ function Events() {
               <div key={index} className="event-card">
                 <h3>{event.title}</h3>
                 <p>
-                  <strong>Date:</strong> {event.date}
+                  <strong>Date:</strong> {event.eventDateTime}
                 </p>
                 <p>
-                  <strong>Address:</strong> {event.address}
+                  <strong>Location:</strong> {event.location}
                 </p>
                 <p>
                   <strong>Description:</strong> {event.description}
