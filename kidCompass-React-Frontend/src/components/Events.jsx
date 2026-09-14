@@ -37,6 +37,19 @@ function Events() {
         .then((response) => response.json())
         .then((data) => {
           setEvents(data);
+        }).catch(() => { setMessage("Unable to load Events");
+        });
+  }, []);
+
+  // Get parents from Spring Boot when the page loads
+  useEffect(() => {
+    fetch("http://localhost:8080/api/parents")
+        .then((response) => response.json())
+        .then((data) => {
+          setParents(data);
+        })
+        .catch(() => {
+          setMessage("Unable to load parent profiles.");
         });
   }, []);
 
