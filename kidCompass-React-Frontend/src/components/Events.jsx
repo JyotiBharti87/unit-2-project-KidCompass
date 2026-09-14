@@ -49,7 +49,7 @@ function Events() {
     setFormData({
       title: "",
       date: "",
-      address: "",
+      location: "",
       description: "",
     });
   };
@@ -93,16 +93,16 @@ function Events() {
             onChange={handleChange}
           />
           <input
-            type="date"
-            name="date"
-            value={formData.date}
+            type="datetime-local"
+            name="eventDateTime"
+            value={formData.eventDateTime}
             onChange={handleChange}
           />
           <textarea
             type="text"
-            name="address"
-            placeholder="Event address"
-            value={formData.address}
+            name="location"
+            placeholder="Event location"
+            value={formData.location}
             onChange={handleChange}
             row={4}
           />
