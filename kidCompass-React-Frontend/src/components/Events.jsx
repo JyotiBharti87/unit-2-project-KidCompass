@@ -239,7 +239,7 @@ function Events() {
             rows={4}
           />
           <button type="submit">
-            {editIndex !== null ? "update Event" : "Add Event"}
+            {editIndex !== null ? "Update Event" : "Add Event"}
           </button>
         </form>
 
