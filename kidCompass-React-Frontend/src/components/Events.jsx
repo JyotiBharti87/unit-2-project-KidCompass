@@ -193,7 +193,24 @@ function Events() {
 
       <div className="detail-box">
         <h1>Events</h1>
+        {/*Show Feedback to the user*/}
+        {message && <p className="message">{message}</p>}
         <form onSubmit={handleSubmit} className="event-form">
+
+          {/* Select the parent creating the event */}
+          <select
+            value={parentId}
+            onChange={(e) => setParentId(e.target.value)}
+            disabled={editIndex !== null} // Disable selection when editing
+          >
+            <option value="">Select Parent</option>
+            {parents.map((parent) => (
+              <option key={parent.id} value={parent.id}>
+                {parent.name}
+              </option>
+            ))}
+          </select>
+
           <input
             type="text"
             name="title"
