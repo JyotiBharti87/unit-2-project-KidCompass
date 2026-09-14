@@ -7,13 +7,23 @@ import "../App.css";
 function Events() {
   const navigate = useNavigate();
 
-  // Temporary parent id used to create events
-  const parentId = 2;
 
   //state to store events from backend
   const[events, setEvents] = useState ([]);
 
+  // Store parents so the user can select who is creating the event
+  const [parents, setParents] = useState([]);
+
+  //Store the index of the event being edited
   const [editIndex, setEditIndex] = useState(null);
+
+  //store the selected parent id
+  const [parentId, setParentId] = useState("");
+
+  //show error message to the user
+  const[message, setMessage] = useState("");
+
+  //store value/data from the form
   const [formData, setFormData] = useState({
     title: "",
     eventDateTime: "",
