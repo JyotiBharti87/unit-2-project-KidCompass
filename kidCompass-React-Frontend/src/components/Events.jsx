@@ -7,6 +7,9 @@ import "../App.css";
 function Events() {
   const navigate = useNavigate();
 
+  // Temporary parent id used to create events
+  const parentId = 2;
+
   //state to store events from backend
   const[events, setEvents] = useState ([]);
 
@@ -17,6 +20,15 @@ function Events() {
     location: "",
     description: "",
   });
+
+  // Get events from Spring Boot API
+  useEffect(() => {
+    fetch("http://localhost:8080/api/events")
+        .then((response) => response.json())
+        .then((data) => {
+          setEvents(data);
+        });
+  }, []);
 
   //handle changes from input
 
