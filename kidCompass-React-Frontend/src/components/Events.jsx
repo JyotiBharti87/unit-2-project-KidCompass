@@ -225,12 +225,11 @@ function Events() {
             onChange={handleChange}
           />
           <textarea
-            type="text"
             name="location"
             placeholder="Event location"
             value={formData.location}
             onChange={handleChange}
-            row={4}
+            row={3}
           />
           <textarea
             name="description"
