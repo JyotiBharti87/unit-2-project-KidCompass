@@ -119,24 +119,36 @@ function Events() {
           .then((response) => response.json())
           .then((newEvent) => {
             setEvents([...events, newEvent]);
+            setMessage("Event added successfully.");
+            clearForm();
+          })
+          .catch(() => {
+            setMessage("Unable to add the event.");
           });
     }
-
-
-  //delete events
-
-    setFormData({
-      title: "",
-      eventDateTime: "",
-      location: "",
-      description: "",
-    });
   };
 
-  // Save to localStorage whenever events change
-  // useEffect(() => {
-  //   localStorage.setItem("events", JSON.stringify(events));
-  // }, [events]);
+
+  // Put selected event information into the form
+  const handleEdit = (index) => {
+    const event = events[index];
+
+    setFormData({
+      title: event.title,
+      eventDateTime: event.eventDateTime,
+      location: event.location,
+      description: event.description || "",
+    });
+
+    if (event.parent) {
+      setParentId(event.parent.id);
+    }
+
+    setEditIndex(index);
+    setMessage("");
+  };
+
+
 
 
   return (
