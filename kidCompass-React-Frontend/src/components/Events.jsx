@@ -64,14 +64,21 @@ function Events() {
   };
 
   //Add a new Event or Update an existing event
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Make sure required fields are filled out
+    // form validation: check if required fields are filled
     if (!formData.title || !formData.eventDateTime || !formData.location) {
+      setMessage("Please fill in all required fields.");
       return;
     }
+
+    // A parent must be selected to create an event.
+    if (editIndex === null && !parentId) {
+      setMessage("Please select a parent.");
+      return;
+    }
+    setMessage(""); // Clear any previous messages
 
     // Update an existing event
     if (editIndex !== null) {
@@ -91,6 +98,12 @@ function Events() {
 
             setEvents(updatedEvents);
             setEditIndex(null);
+            setMessage("Event updated successfully.");
+
+            clearForm();
+          })
+          .catch(() => {
+            setMessage("Unable to update the event.");
           });
 
     } else {
