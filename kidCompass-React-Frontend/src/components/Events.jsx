@@ -1,21 +1,20 @@
 import { useState, useEffect } from "react";
-import eventsData from "../EventsData.json";
+
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import "../App.css";
 
 function Events() {
   const navigate = useNavigate();
-  const [events, setEvents] = useState(() => {
-    const saved = localStorage.getItem("events");
-    return saved ? JSON.parse(saved) : eventsData;
-  });
+
+  //state to store events from backend
+  const[events, setEvents] = useState ([]);
 
   const [editIndex, setEditIndex] = useState(null);
   const [formData, setFormData] = useState({
     title: "",
-    date: "",
-    address: "",
+    eventDateTime: "",
+    location: "",
     description: "",
   });
 
@@ -73,10 +72,13 @@ function Events() {
       });
     }
   };
+
   // Save to localStorage whenever events change
-  useEffect(() => {
-    localStorage.setItem("events", JSON.stringify(events));
-  }, [events]);
+  // useEffect(() => {
+  //   localStorage.setItem("events", JSON.stringify(events));
+  // }, [events]);
+
+
   return (
     <main className="app">
       <Button text="⬅ Back" className="back-btn" onClick={() => navigate(-1)} />
