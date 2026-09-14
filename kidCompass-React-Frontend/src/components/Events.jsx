@@ -201,7 +201,7 @@ function Events() {
           <select
             value={parentId}
             onChange={(e) => setParentId(e.target.value)}
-            disabled={editIndex !== null} // Disable selection when editing
+            disabled={editIndex !== null}
           >
             <option value="">Select Parent</option>
             {parents.map((parent) => (
@@ -229,7 +229,7 @@ function Events() {
             placeholder="Event location"
             value={formData.location}
             onChange={handleChange}
-            row={3}
+            rows={3}
           />
           <textarea
             name="description"
@@ -242,12 +242,14 @@ function Events() {
             {editIndex !== null ? "update Event" : "Add Event"}
           </button>
         </form>
+
+
         <div className="events-list">
           {events.length === 0 ? (
             <p>No events added yet.</p>
           ) : (
             events.map((event, index) => (
-              <div key={index} className="event-card">
+              <div key={event.id} className="event-card">
                 <h3>{event.title}</h3>
                 <p>
                   <strong>Date:</strong> {event.eventDateTime}
@@ -258,6 +260,12 @@ function Events() {
                 <p>
                   <strong>Description:</strong> {event.description}
                 </p>
+
+                {event.parent && (
+                  <p>
+                    <strong>Created By:</strong> {event.parent.name}
+                  </p>
+                )}
                 <div className="event-actions">
                   <button type="button" onClick={() => handleEdit(index)}>
                     Edit
