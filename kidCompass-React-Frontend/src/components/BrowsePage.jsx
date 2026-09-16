@@ -36,9 +36,8 @@ function BrowsePage({ userName }) {
             })
             .catch(() => {
                 setErrorMessage("Unable to load kids Profile. Please try again later.");
-            })
-        }
-            }
+            });
+        }, []);
 
   //filter kids by Location and age
   const filteredKids = kids.filter((kid) => {
