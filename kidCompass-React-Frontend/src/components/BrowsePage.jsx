@@ -5,6 +5,7 @@ import LocationSearch from "./LocationSearch";
 import FilterBar from "./FilterBar";
 import KidList from "./KidList";
 import "../App.css";
+import {data} from "react-router";
 
 function BrowsePage({ userName }) {
 
@@ -29,6 +30,14 @@ function BrowsePage({ userName }) {
                 }
                 return response.json();
                 })
+            .then(data) => {
+            setKids(data);{
+                setErrorMessage("");
+            })
+            .catch(() => {
+                setErrorMessage("Unable to load kids Profile. Please try again later.");
+            })
+        }
             }
 
   //filter kids by Location and age
