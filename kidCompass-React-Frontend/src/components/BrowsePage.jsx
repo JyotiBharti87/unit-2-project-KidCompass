@@ -11,6 +11,9 @@ function BrowsePage({ userName }) {
     //state to store the list of kids
     const [kids,setKids] = useState([]);
 
+    // Store error message if data cannot be loaded
+    const [errorMessage, setErrorMessage] = useState("");
+
   //State for search input
   const [locationTerm, setLocationTerm] = useState("");
 
