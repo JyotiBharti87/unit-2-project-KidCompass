@@ -23,12 +23,13 @@ function BrowsePage({ userName }) {
   //Get data from springBootApi
     useEffect(() => {
         fetch("http://localhost:8080/api/parents")
-            .then((response) => response.json())
-            .then((data) => {
-                console.log("Parents from backend:", data);
-                setKids(data);
-            });
-    }, []);
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error();
+                }
+                return response.json();
+                })
+            }
 
   //filter kids by Location and age
   const filteredKids = kids.filter((kid) => {
