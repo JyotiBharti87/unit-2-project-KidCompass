@@ -30,8 +30,8 @@ function BrowsePage({ userName }) {
   //filter kids by Location and age
   const filteredKids = kids.filter((kid) => {
     const matchesLocation =
-      kid.city.toLowerCase().includes(locationTerm.toLowerCase()) ||
-      kid.zipCode.toString().includes(locationTerm);
+        (kid.city || "").toLowerCase().includes(locationTerm.toLowerCase()) ||
+        (kid.zipCode || "").includes(locationTerm);
 
     let matchesAge = true;
 
