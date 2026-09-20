@@ -7,7 +7,7 @@ function Header({ setFeedbackOpen }) {
   return (
     <header className="app-header">
       <Link to="/" className="logo-container">
-        <img src="/kidcompass_final.svg" alt="" className="logo" />
+        <img src="/kidcompass_final.svg" alt="KidCompass" className="logo" />
       </Link>
       <div className="nav-links">
         <div className="nav-items">
