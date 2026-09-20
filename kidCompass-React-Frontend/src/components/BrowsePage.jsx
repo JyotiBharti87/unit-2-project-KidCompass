@@ -5,7 +5,7 @@ import LocationSearch from "./LocationSearch";
 import FilterBar from "./FilterBar";
 import KidList from "./KidList";
 import "../App.css";
-import {data} from "react-router";
+
 
 function BrowsePage({ userName }) {
 
