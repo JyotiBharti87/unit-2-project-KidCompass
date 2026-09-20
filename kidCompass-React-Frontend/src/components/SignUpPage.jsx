@@ -5,13 +5,21 @@ import "../App.css";
 
 function SignupPage({ setUserName }) {
   const [name, setName] = useState("");
+  // State to show confetti after signup
+  const [showConfetti, setShowConfetti] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setUserName(name);
-    navigate("/browse");
+    setShowConfetti(true);
+
+    // Go to Browse page after showing confetti
+    setTimeout(() => {
+      navigate("/browse");
+    }, 1500);
   };
+
   return (
     <div className="auth-page">
       <div className="signup-card">
