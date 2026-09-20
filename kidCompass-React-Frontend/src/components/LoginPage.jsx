@@ -53,7 +53,9 @@ function LoginPage({ setUserName }) {
           <button type="submit">Sign In</button>
         </form>
         <div className="back-link">
-          <Link to="/signup">Create an account</Link>
+          <Link to="/signup" className="create-account-btn">
+            Create an account
+          </Link>
         </div>
       </div>
     </div>
