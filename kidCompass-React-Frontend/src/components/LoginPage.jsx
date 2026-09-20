@@ -55,7 +55,6 @@ function LoginPage({ setUserName }) {
             placeholder="Enter password"
             value={loginData.password}
             onChange={handleChange}
-            required
           />
           <div className="login-actions">
             <button type="submit">Sign In</button>
