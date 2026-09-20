@@ -312,6 +312,19 @@ th {
   transform: translateY(-3px);
 }
 
+/*Create account button" */
+.create-account-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #7fc3e3;
+  color: white;
+text-decoration: none;
+border-radius: 10px;
+font-weight: bold;
+margin-top: 10px;
+}
+
+
 /* kids around banner */
 .kids-row {
   position: absolute;
