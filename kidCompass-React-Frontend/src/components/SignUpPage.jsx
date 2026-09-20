@@ -59,9 +59,10 @@ function SignupPage({ setUserName }) {
           </div>
         </form>
 
-        <div className="back-link">
-          <Link to="/">Back to Login</Link>
-        </div>
+        <Link to="/" className="login-btn">
+          Back to Login
+        </Link>
+
       </div>
     </div>
   );
