@@ -30,9 +30,9 @@ function BrowsePage({ userName }) {
                 }
                 return response.json();
                 })
-            .then(data) => {
-            setKids(data);{
-                setErrorMessage("");
+            .then((data) => {
+            setKids(data);
+            setErrorMessage("");
             })
             .catch(() => {
                 setErrorMessage("Unable to load kids Profile. Please try again later.");
