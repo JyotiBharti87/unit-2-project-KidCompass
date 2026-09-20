@@ -11,6 +11,7 @@ function SignupPage({ setUserName }) {
   const [zipCode, setZipCode] = useState("");
   const [kidName, setKidName] = useState("");
   const [kidAge, setKidAge] = useState("");
+  const[kidGender, setKidGender] = useState("");
   const [kidBio, setKidBio] = useState("");
 
   // State for error message
@@ -31,6 +32,7 @@ function SignupPage({ setUserName }) {
       zipCode: zipCode,
       kidName: kidName,
       kidAge: Number(kidAge),
+      kidGender: kidGender,
       kidBio: kidBio,
     };
 
@@ -130,6 +132,11 @@ function SignupPage({ setUserName }) {
             min="1"
             max="14"
           />
+
+          <input type="text"
+                 placeholder="Enter your Child Gender"
+                 value={kidGender}
+                 onChange={(e) => setKidGender(e.target.value)}/>
 
           <input type="text"
                  placeholder="Enter your Child Hobbies"
