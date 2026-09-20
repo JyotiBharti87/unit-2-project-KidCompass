@@ -7,6 +7,9 @@ function LoginPage({ setUserName }) {
     userName: "",
     password: "",
   });
+
+  const [message, setMessage] = useState("");
+
   const navigate = useNavigate();
 
   //handle input Change
@@ -24,9 +27,12 @@ function LoginPage({ setUserName }) {
 
     //validation
     if (!loginData.userName || !loginData.password) {
-      alert("Please enter userName and password");
+      setMessage("Please enter userName and password");
       return;
     }
+    //clear error message
+    setMessage("");
+
     setUserName(loginData.userName);
     navigate("/browse");
   };
@@ -34,6 +40,7 @@ function LoginPage({ setUserName }) {
     <div className="auth-page">
       <div className="auth-card">
         <h2>Login</h2>
+        {message && <p className="message">{message}</p>}
         <form onSubmit={handleSubmit}>
           <input
             type="text"
