@@ -12,19 +12,52 @@ function SignupPage({ setUserName }) {
   const [kidAge, setKidAge] = useState("");
   const [kidBio, setKidBio] = useState("");
 
+  // State for error message
+  const [message, setMessage] = useState("");
+
   // State to show confetti after signup
   const [showConfetti, setShowConfetti] = useState(false);
   const navigate = useNavigate();
 
+  // Handle signup form
   const handleSubmit = (e) => {
     e.preventDefault();
-    setUserName(name);
-    setShowConfetti(true);
 
-    // Go to Browse page after showing confetti
-    setTimeout(() => {
-      navigate("/browse");
-    }, 1500);
+    // Create a new parent and kid profile
+    const newParent = {
+      name: name,
+      city: location,
+      kidName: kidName,
+      kidAge: Number(kidAge),
+      kidBio: kidBio,
+    };
+
+    // Save the profile to the backend
+    fetch("http://localhost:8080/api/parents", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newParent),
+    })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error();
+          }
+          return response.json();
+        })
+        .then(() => {
+          setUserName(name);
+          setShowConfetti(true);
+
+          // Go to Browse page
+          setTimeout(() => {
+            navigate("/browse");
+          }, 1500);
+        })
+        .catch(() => {
+          setMessage("Unable to create profile. Please try again.");
+        });
   };
 
   return (
@@ -53,12 +86,17 @@ function SignupPage({ setUserName }) {
             required
           />
 
-          <input type="number" placeholder="Enter your Age" required min="18" />
+          <input type="number"
+                 placeholder="Enter your Age"
+                 required min="18"
+          />
 
-          <input type="text" placeholder="Enter your Location"
+          <input type="text"
+                 placeholder="Enter your Location"
                  value={location}
                  onChange={(e) => setLocation(e.target.value)}
-                 required />
+                 required
+          />
 
           <input
             type="tel"
@@ -68,7 +106,8 @@ function SignupPage({ setUserName }) {
             required
           />
 
-          <input type="text" placeholder="Enter your Child Name"
+          <input type="text"
+                 placeholder="Enter your Child Name"
                  value={kidName}
                  onChange={(e) => setKidName(e.target.value)}
                  required />
@@ -83,7 +122,8 @@ function SignupPage({ setUserName }) {
             max="14"
           />
 
-          <input type="text" placeholder="Enter your Child Hobbies"
+          <input type="text"
+                 placeholder="Enter your Child Hobbies"
                  value={kidBio}
                  onChange={(e) => setKidBio(e.target.value)}/>
 
