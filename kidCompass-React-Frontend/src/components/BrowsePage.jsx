@@ -78,6 +78,8 @@ function BrowsePage({ userName }) {
                    setSelectedAge={setSelectedAge} />
       </div>
 
+        {errorMessage && (<p className="errorMessage">{errorMessage}</p>)}
+
       <KidList kids={filteredKids} />
     </main>
   );
