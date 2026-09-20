@@ -1,4 +1,5 @@
 import Button from "./Button";
+
 //display kid Detail
 function KidDetail({ kid, requested, setRequested }) {
   if (!kid) {
@@ -8,12 +9,12 @@ function KidDetail({ kid, requested, setRequested }) {
   return (
     <div className="detail-box">
       <img
-        src={`https://api.dicebear.com/7.x/adventurer/svg?seed=${kid.name}`}
-        alt={kid.name}
+        src={`https://api.dicebear.com/7.x/adventurer/svg?seed=${kid.kidName}`}
+        alt={kid.kidName}
         className="detail-image"
       />
       <div className="detail-header">
-        <h1>{kid.name}</h1>
+        <h1>{kid.kidName}</h1>
         <Button
           text={requested ? "Sent" : "Connect"}
           onClick={() => setRequested(true)}
@@ -24,18 +25,18 @@ function KidDetail({ kid, requested, setRequested }) {
 
       <p>
         <strong>About:</strong>
-        {kid.about}
+        {kid.kidBio}
       </p>
 
       <table className="kid-table">
         <tbody>
           <tr>
             <th>Age</th>
-            <td>{kid.age}</td>
+            <td>{kid.kidAge}</td>
           </tr>
           <tr>
             <th>Gender</th>
-            <td>{kid.gender}</td>
+            <td>{kid.kidGender || "Not specified"}</td>
           </tr>
           <tr>
             <th>City</th>
@@ -43,16 +44,10 @@ function KidDetail({ kid, requested, setRequested }) {
           </tr>
           <tr>
             <th>Zip Code</th>
-            <td>{kid.zipCode}</td>
+            <td>{kid.zipCode || "Not Provided"}</td>
           </tr>
         </tbody>
       </table>
-
-      <strong>Hobbies:</strong>
-      <ul>
-        {kid.hobbies &&
-          kid.hobbies.map((hobby) => <li key={hobby}>{hobby}</li>)}
-      </ul>
     </div>
   );
 }
