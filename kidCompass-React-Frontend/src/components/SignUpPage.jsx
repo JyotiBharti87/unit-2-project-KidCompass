@@ -5,6 +5,13 @@ import "../App.css";
 
 function SignupPage({ setUserName }) {
   const [name, setName] = useState("");
+
+  // Information that will be saved to the database
+  const [location, setLocation] = useState("");
+  const [kidName, setKidName] = useState("");
+  const [kidAge, setKidAge] = useState("");
+  const [kidBio, setKidBio] = useState("");
+
   // State to show confetti after signup
   const [showConfetti, setShowConfetti] = useState(false);
   const navigate = useNavigate();
@@ -48,7 +55,10 @@ function SignupPage({ setUserName }) {
 
           <input type="number" placeholder="Enter your Age" required min="18" />
 
-          <input type="text" placeholder="Enter your Location" required />
+          <input type="text" placeholder="Enter your Location"
+                 value={location}
+                 onChange={(e) => setLocation(e.target.value)}
+                 required />
 
           <input
             type="tel"
@@ -58,17 +68,24 @@ function SignupPage({ setUserName }) {
             required
           />
 
-          <input type="text" placeholder="Enter your Child Name" required />
+          <input type="text" placeholder="Enter your Child Name"
+                 value={kidName}
+                 onChange={(e) => setKidName(e.target.value)}
+                 required />
 
           <input
             type="number"
             placeholder="Enter your Child Age"
+            value={kidAge}
+            onChange={(e) => setKidAge(e.target.value)}
             required
             min="1"
             max="14"
           />
 
-          <input type="text" placeholder="Enter your Child Hobbies" />
+          <input type="text" placeholder="Enter your Child Hobbies"
+                 value={kidBio}
+                 onChange={(e) => setKidBio(e.target.value)}/>
 
           <textarea placeholder="Optional Notes"></textarea>
 
