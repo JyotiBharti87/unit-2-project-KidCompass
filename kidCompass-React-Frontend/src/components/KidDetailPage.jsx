@@ -1,39 +1,56 @@
-// Displays full details for a selected kid using (id)
+// Displays full details for a selected kid using id
 
 import { useParams, useNavigate } from "react-router-dom";
-import kidsData from "../KidsData.json";
 import "../App.css";
 import Button from "./Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import KidDetail from "./KidDetail";
 
 function KidDetailPage() {
-  const { id } = useParams(); // Get the kid ID from the URL
-  const navigate = useNavigate();
-  const [requested, setRequested] = useState(false);
+    const { id } = useParams();
+    const navigate = useNavigate();
 
-  const kid = kidsData.find((k) => k.id === Number(id)); // Find the matching kid from JSON data
+    const [kid, setKid] = useState(null);
+    const [requested, setRequested] = useState(false);
+    const [message, setMessage] = useState("");
 
-  if (!kid) {
+    // Get the selected kid from the backend
+    useEffect(() => {
+        fetch(`http://localhost:8080/api/parents/${id}`)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error();
+                }
+
+                return response.json();
+            })
+            .then((data) => {
+                setKid(data);
+            })
+            .catch(() => {
+                setMessage("Unable to load kid details.");
+            });
+    }, [id]);
+
     return (
-      <main className="app">
-        <Button
-          text="⬅ Back"
-          className="back-btn"
-          onClick={() => navigate(-1)} // Navigate back to previous page
-        />
-        <p>Kid not found.</p>
-      </main>
+        <main className="app">
+            <Button
+                text="⬅ Back"
+                className="back-btn"
+                onClick={() => navigate(-1)}
+            />
+
+            {message && <p className="message">{message}</p>}
+
+            {kid && (
+                <KidDetail
+                    kid={kid}
+                    requested={requested}
+                    setRequested={setRequested}
+                />
+            )}
+        </main>
     );
-  }
-
-  return (
-    <main className="app">
-      <Button text="⬅ Back" className="back-btn" onClick={() => navigate(-1)} />
-
-      <KidDetail kid={kid} requested={requested} setRequested={setRequested} />
-    </main>
-  );
 }
 
 export default KidDetailPage;
