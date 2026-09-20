@@ -118,14 +118,11 @@ Some features I would like to add in the future are:
 
 ## Wireframe
 
-![KidCompass Wireframe](https://www.figma.com/design/f9Nmvls2UGsPHfvUs2HLW3/Kid-Compass?node-id=0-1&p=f&t=0bF1uVk5EqugpxMx-0)
+[KidCompass Wireframe](https://www.figma.com/design/f9Nmvls2UGsPHfvUs2HLW3/Kid-Compass?node-id=0-1&p=f&t=0bF1uVk5EqugpxMx-0)
 
 ## ER Diagram
 
-![KidCompass ER Diagram](https://dbdiagram.io/d/6a837a8ae093539a9ed1ad2e)
-
-# Figma Design
-[KidCompass Figma Design](https://www.figma.com/design/f9Nmvls2UGsPHfvUs2HLW3/Kid-Compass?node-id=0-1&p=f&t=0bF1uVk5EqugpxMx-0)
+[KidCompass ER Diagram](https://dbdiagram.io/d/6a837a8ae093539a9ed1ad2e)
 
 ## Project Structure
 
