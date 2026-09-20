@@ -22,6 +22,18 @@ function SignupPage({ setUserName }) {
 
   return (
     <div className="auth-page">
+      {showConfetti && (
+          <div className="confetti-container">
+            <span>🎉</span>
+            <span>⭐</span>
+            <span>🎊</span>
+            <span>✨</span>
+            <span>🎉</span>
+            <span>⭐</span>
+            <span>🎊</span>
+            <span>✨</span>
+          </div>
+      )}
       <div className="signup-card">
         <h2 className="signup-title">Please Fill Out Your Information</h2>
 
