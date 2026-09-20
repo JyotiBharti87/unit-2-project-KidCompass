@@ -314,6 +314,13 @@ th {
   transform: translateY(-3px);
 }
 
+.login-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
 /* kids around banner */
 .kids-row {
   position: absolute;
