@@ -8,6 +8,7 @@ function SignupPage({ setUserName }) {
 
   // Information that will be saved to the database
   const [location, setLocation] = useState("");
+  const [zipCode, setZipCode] = useState("");
   const [kidName, setKidName] = useState("");
   const [kidAge, setKidAge] = useState("");
   const [kidBio, setKidBio] = useState("");
@@ -27,6 +28,7 @@ function SignupPage({ setUserName }) {
     const newParent = {
       name: name,
       city: location,
+      zipCode: zipCode,
       kidName: kidName,
       kidAge: Number(kidAge),
       kidBio: kidBio,
@@ -96,6 +98,13 @@ function SignupPage({ setUserName }) {
                  value={location}
                  onChange={(e) => setLocation(e.target.value)}
                  required
+          />
+          <input
+              type="text"
+              placeholder="Enter your Zip Code"
+              value={zipCode}
+              onChange={(e) => setZipCode(e.target.value)}
+              required
           />
 
           <input
