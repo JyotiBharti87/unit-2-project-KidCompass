@@ -296,8 +296,7 @@ th {
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  line-height: normal;
 }
 
 .login-btn {

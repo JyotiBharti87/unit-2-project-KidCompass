@@ -52,17 +52,15 @@ function SignupPage({ setUserName }) {
 
           <textarea placeholder="Optional Notes"></textarea>
 
-          <div className="signup-actions">
-            <button type="submit" className="signup-btn">
+          <div className="login-actions">
+            <button type="submit">
               Sign Up
             </button>
+            <Link to="/" className="login-btn">
+              Back to Login
+            </Link>
           </div>
         </form>
-
-        <Link to="/" className="login-btn">
-          Back to Login
-        </Link>
-
       </div>
     </div>
   );
