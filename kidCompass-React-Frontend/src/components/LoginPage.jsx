@@ -50,13 +50,15 @@ function LoginPage({ setUserName }) {
             onChange={handleChange}
             required
           />
-          <button type="submit">Sign In</button>
+          <div className="login-actions">
+            <button type="submit">Sign In</button>
+
+            <Link to="/signup" className="create-btn">
+              Create an account
+            </Link>
+          </div>
+
         </form>
-        <div className="back-link">
-          <Link to="/signup" className="create-btn">
-            Create an account
-          </Link>
-        </div>
       </div>
     </div>
   );
