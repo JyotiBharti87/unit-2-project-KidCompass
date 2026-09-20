@@ -295,6 +295,8 @@ th {
   font-size: 1rem;
   font-weight: 700;
   min-width: 130px;
+  text-decoration: none;
+  display: inline-block;
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
@@ -311,19 +313,6 @@ th {
 .create-btn:hover {
   transform: translateY(-3px);
 }
-
-/*Create account button" */
-.create-account-btn {
-  display: inline-block;
-  padding: 12px 20px;
-  background-color: #7fc3e3;
-  color: white;
-text-decoration: none;
-border-radius: 10px;
-font-weight: bold;
-margin-top: 10px;
-}
-
 
 /* kids around banner */
 .kids-row {
