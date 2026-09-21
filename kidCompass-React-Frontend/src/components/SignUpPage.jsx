@@ -11,7 +11,7 @@ function SignupPage({ setUserName }) {
   const [zipCode, setZipCode] = useState("");
   const [kidName, setKidName] = useState("");
   const [kidAge, setKidAge] = useState("");
-  const[kidGender, setKidGender] = useState("");
+  const [kidGender, setKidGender] = useState("");
   const [kidBio, setKidBio] = useState("");
 
   // State for error message
